@@ -1,36 +1,39 @@
 import { Module } from '@nestjs/common';
+import { LoggerModule } from '@app/common';
+import { JwtModule } from '@nestjs/jwt';
+import * as Joi from 'joi';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import { JwtModule } from '@nestjs/jwt';
 import { UsersModule } from './users/users.module';
-import { LoggerModule } from '@app/common';
-import { ConfigService } from '@nestjs/config';
-import { ConfigModule } from '@nestjs/config';
-import * as joi from 'joi';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { LocalStategy } from './strategies/local.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Module({
-  imports: [UsersModule, LoggerModule, 
+  imports: [
+    UsersModule,
+    LoggerModule,
     ConfigModule.forRoot({
       isGlobal: true,
-      validationSchema: joi.object({
-        MONGODB_URI: joi.string().required(),
-        JWT_SECRET: joi.string().required(),
-        JWT_EXPIRATION: joi.string().required(),
-        PORT: joi.number().required()
-      })
-     }),
-    JwtModule.registerAsync({
-    useFactory: (configService: ConfigService) => ({
-      secret: configService.get<string>('JWT_SECRET'),
-      signOptions: {
-        expiresIn: `${configService.get('JWT_EXPIRATION')}s`,
-      },
+      validationSchema: Joi.object({
+        MONGODB_URI: Joi.string().required(),
+        JWT_SECRET: Joi.string().required(),
+        JWT_EXPIRATION: Joi.string().required(),
+        HTTP_PORT: Joi.number().required(),
+        TCP_PORT: Joi.number().required(),
+      }),
     }),
-    inject: [ConfigService],
-  })],
+    JwtModule.registerAsync({
+      useFactory: (configService: ConfigService) => ({
+        secret: configService.get<string>('JWT_SECRET'),
+        signOptions: {
+          expiresIn: `${configService.get('JWT_EXPIRATION')}s`,
+        },
+      }),
+      inject: [ConfigService],
+    }),
+  ],
   controllers: [AuthController],
   providers: [AuthService, LocalStategy, JwtStrategy],
 })
-export class AuthModule {}
+export class AuthModule {}  
