@@ -8,10 +8,10 @@ COPY nest-cli.json nest-cli.json
 
 RUN npm install
 
-COPY apps/payments apps/payments
+COPY apps/notifications apps/notifications
 COPY libs libs
 
-RUN npm run build payments
+RUN npm run build notifications
 
 FROM node:alpine as production
 
@@ -26,4 +26,4 @@ RUN npm install --prod
 
 COPY --from=development /usr/src/app/dist ./dist
 
-CMD ["node", "dist/apps/payments/main"]
+CMD ["node", "dist/apps/notifications/main"]
