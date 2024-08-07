@@ -56,3 +56,5 @@ steps:
       ]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'asia-southeast1-docker.pkg.dev/imperial-arcade-423509-s1/payments/production']
+options:
+  logging: CLOUD_LOGGING_ONLY
