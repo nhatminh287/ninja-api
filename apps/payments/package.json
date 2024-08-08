@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/stripe": "^8.0.417",
+    "payments": "file:",
     "stripe": "^16.6.0"
   }
 }
