@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "imperial-arcade-423509-s1",
+  "private_key_id": "dd5f8fe195708ec41b739ed447565cbfa5c65e78",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCgf5H96xARXbdW\nTqg74GC33UPVmN+LYlwbS0gB6FEGuG+nMxvj1SVdLfrgCF9H1dmO/hocDM1u6xtS\nNbPmRDzNFk6WvKd4I2do9ymtFRHQ2Fj3kRFCVoLLr0qG5PWKF5eKeD75lhSmiozr\nChrA4o5f09K8Rn2wzIIiQv4BofAdIozeVy0gngZ7fQCif74swrSKlauVDbbDkSHQ\nw/XrhXLJIvO6D31sSpfSZfmG8HSv1B5xbUr8LLGtbh58VB12KWjKlFbhGmkYqw7K\nrT1bgICmu5m5SlkTSUSRuWo+ZcqDLtbM1zAG7bcJ1nG3DdvKRup/YeEKj2QsfZ59\nYTRJAk7RAgMBAAECggEAAs9A48BH63nnwfXGCahLoSRZMeXHcgXyhVLLy6bAtlyn\nrbZeFF6wlQE/TUkwO85xTMjDdb6+oOSyOX3xrIQAyXlMvmRGjTqXbpW3D83Y3j5P\nTmQmeHIRv5WNuS9MYhK4JyckORPIwEKYJWwrnDlLEz/exkd4n03xMD7aefZXAPeI\n/aj7a6aVtdxAk2QwR21ZY6PQ2Niqay0xS9wIelRv3WHAblPWDuE94GSn/6XxqmV8\nZnGNH+6MaQW0jC6DUFXg5D90K4xfY76MSy+IRPU18l75+g53dxTCVOvOL/1gRHsp\niWvGTD3wuCK8O/lIQbkmkOph7MsBa0GkKlvtkg25LQKBgQDeZOtNsAPR+hF16Tq4\nqpsedb1fMYSNhEmGSkNguotm4jdvqcnmVaH+y/qrx4j6et9yqCVFNckewvU3PAOc\n0SuKbaiGGKwo0ZlEJlYxMfn84ncNrz5YB9YWtCwG6gB4xv138H6/otEkrH3Mp8Rh\nf+C3d4YAqz+oFZucvoWFo/183QKBgQC4wEZsNodE3OqxBC+6rJQvmxM1+4xy+aJu\nt8yLEaTuGOC8ONL58ri35nJbWOIUbwztZ+P72VFBdAODz47tdc9ZOvt0LawFAdp/\n5JaKoVt4M2jlvC7PN7GRH6CqY/Ie1bPZWOakttghqStDqtBCj0JgUFX4i0k3X3JJ\nJqd7jJMwhQKBgGKOEKTt8tNz4ZcCU66QlIuMG+76r8ZTMI4djPxpzus6Jt0KPlof\n6tlSpfTISVDPcQSLtXCVZFqIhUkEBInTPFttOzip6GlycVx9LMdCYYmLBr1+wr8a\nQervz28E9k6PyLYFUvYz/kElW959Ho8ir4A+rJjRSzV+1eZBnERcJzLVAoGAW0K3\nRrsExLJvx/MudILNTFrI+ZCBh0Xiw9hM1KFpnCdz0+Yp6UfJkSXndVIJk1hrxVXd\nW0m1BqT9G35KtufL/eLR1Ui+QVbyDNzotCASo+SZO2pioP982hgKcECgmDSt+34b\nqF+dkbsT4QAekdJcUmE8pmJ/Tzf5p0LN1ozRJFUCgYAOBv0TBk/V0NRcyMMgAOdI\nKUS0OY+sQGSYHEfXsnMP/8XLoT0PY5jKVgqWQWJT9OxQQq4/1zCe5BCVTrNgY9U+\n/QDZc1U1/gMgHt+qHfruOgV1v6iRj7wJ0QANeOKR7XhkWvv4Pg1QM7NY3vZ6/02Z\nTknDu17E/TIl4Wn/1hBXXg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "artifact-image-pull@imperial-arcade-423509-s1.iam.gserviceaccount.com",
+  "client_id": "103120509004710871969",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/artifact-image-pull%40imperial-arcade-423509-s1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
