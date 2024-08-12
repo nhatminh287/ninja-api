@@ -59,6 +59,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         inject: [ConfigService],
       },
     ]),
+    HealthModule
   ],
   controllers: [ReservationsController],
   providers: [ReservationsService, ReservationsRepository],

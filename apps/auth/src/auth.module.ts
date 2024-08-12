@@ -32,6 +32,7 @@ import { JwtStrategy } from './strategies/jwt.strategy';
       }),
       inject: [ConfigService],
     }),
+    HealthModule
   ],
   controllers: [AuthController],
   providers: [AuthService, LocalStategy, JwtStrategy],
