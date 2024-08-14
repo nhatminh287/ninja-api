@@ -37,5 +37,3 @@ spec:
         ports:
             - containerPort: 3002
             - containerPort: 3003
-
-
