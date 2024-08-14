@@ -18,7 +18,6 @@ RUN npm run build auth
 
 FROM node:alpine as production
 
-
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
@@ -28,10 +27,6 @@ COPY package.json ./
 
 
 RUN npm install --prod
-
-RUN cd apps/auth && npm install
-
-RUN npm run build auth
 
 COPY --from=development /usr/src/app/dist ./dist
 
