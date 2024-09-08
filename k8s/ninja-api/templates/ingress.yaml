@@ -3,6 +3,11 @@ kind: Ingress
 metadata:
   name: ninja-api
 spec:
+  defaultBackend:
+    service:
+      name: auth-http
+      port:
+        number: 3003
   rules:
     - http:
         paths:
